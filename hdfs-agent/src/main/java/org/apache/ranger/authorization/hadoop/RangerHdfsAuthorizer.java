@@ -910,6 +910,9 @@ class RangerHdfsAuditHandler extends RangerDefaultAuditHandler {
 
 	@Override
 	public void processResult(RangerAccessResult result) {
+		LOG.info("===> YY RangerHdfsAuditHandler.processResult");
+		System.out.println("===> YY RangerHdfsAuditHandler.processResult");
+		
 		if(LOG.isDebugEnabled()) {
 			LOG.debug("==> RangerHdfsAuditHandler.logAudit(" + result + ")");
 		}
